@@ -1,4 +1,4 @@
-package pt.ulusofona.cm.kotlin.observerobservable.Interfaces
+package pt.ulusofona.cm.kotlin.observerobservable.interfaces
 
 interface Registavel {
     fun leitorAdicionadoComSucesso()

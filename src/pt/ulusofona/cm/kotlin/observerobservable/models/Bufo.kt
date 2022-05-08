@@ -1,8 +1,7 @@
-package pt.ulusofona.cm.kotlin.observerobservable
+package pt.ulusofona.cm.kotlin.observerobservable.models
 
-import pt.ulusofona.cm.kotlin.observerobservable.Interfaces.Leitor
-import pt.ulusofona.cm.kotlin.observerobservable.Interfaces.OnNoticiaListener
-import pt.ulusofona.cm.kotlin.observerobservable.Interfaces.OnNumeroListener
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNoticiaListener
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class Bufo(nome : String) : Leitor(nome), OnNumeroListener, OnNoticiaListener {
     private val numeros: MutableList<Int> = mutableListOf()

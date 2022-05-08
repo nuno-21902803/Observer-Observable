@@ -1,4 +1,6 @@
-package pt.ulusofona.cm.kotlin.observerobservable.Interfaces
+package pt.ulusofona.cm.kotlin.observerobservable.models
+
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class LeitorPar(nome: String) : Leitor(nome), OnNumeroListener {
     val numeros: MutableList<Int> = mutableListOf()

@@ -1,9 +1,8 @@
-package pt.ulusofona.cm.kotlin.observerobservable
+package pt.ulusofona.cm.kotlin.observerobservable.models
 
-import pt.ulusofona.cm.kotlin.observerobservable.Exceptions.LeitorInexistenteException
-import pt.ulusofona.cm.kotlin.observerobservable.Exceptions.LimiteDeLeitoresAtingidoException
-import pt.ulusofona.cm.kotlin.observerobservable.Interfaces.OnNoticiaListener
-import pt.ulusofona.cm.kotlin.observerobservable.Interfaces.OnNumeroListener
+import pt.ulusofona.cm.kotlin.observerobservable.exceptions.LeitorInexistenteException
+import pt.ulusofona.cm.kotlin.observerobservable.exceptions.LimiteDeLeitoresAtingidoException
+import pt.ulusofona.cm.kotlin.observerobservable.interfaces.OnNumeroListener
 
 class GeradorNumerico(val maxLeitores: Int, private val numeros: List<Int>) {
     private val leitores: MutableList<OnNumeroListener> = mutableListOf()
