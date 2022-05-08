@@ -37,7 +37,7 @@ class CorreioDaLusofona(val maxLeitores: Int, private val noticias: List<Noticia
         }
     }
 
-    fun inicar() {
+    fun iniciar() {
         notificarLeitor()
     }
 

@@ -37,7 +37,7 @@ class GeradorNumerico(val maxLeitores: Int, private val numeros: List<Int>) {
         }
     }
 
-    fun inicar() {
+    fun iniciar() {
         notificarLeitor()
     }
 }
