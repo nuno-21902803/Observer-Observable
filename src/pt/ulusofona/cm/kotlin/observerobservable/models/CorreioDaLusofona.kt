@@ -23,15 +23,15 @@ class CorreioDaLusofona(val maxLeitores: Int, private val noticias: List<Noticia
             if (l == leitor) {
                 leitores.remove(leitor)
                 leitor.leitorRemovidoComSucesso()
-            } else {
-                throw LeitorInexistenteException("Este leitor não está registado!")
+                return
             }
         }
+        throw LeitorInexistenteException("Este leitor não está registado!")
     }
 
     private fun notificarLeitor() {
         for (l in leitores) {
-            for (n in noticias){
+            for (n in noticias) {
                 l.onReceiveNoticia(n)
             }
         }

@@ -23,10 +23,10 @@ class GeradorNumerico(val maxLeitores: Int, private val numeros: List<Int>) {
             if (l == leitor) {
                 leitores.remove(leitor)
                 leitor.leitorRemovidoComSucesso()
-            } else {
-                throw LeitorInexistenteException("Este leitor não está registado!")
+                return
             }
         }
+        throw LeitorInexistenteException("Este leitor não está registado!")
     }
 
     private fun notificarLeitor() {
